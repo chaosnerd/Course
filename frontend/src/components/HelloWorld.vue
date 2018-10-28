@@ -171,58 +171,101 @@
           {
             value: false,
             id: 1,
-            name_en: 'Computer',
-            name_th: 'คอมพิวเตอร์',
+            name_en: 'Bachelor of Arts',
+            name_th: 'ปริญญาศิลปศาสตร์',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาตรี',
+            degree_name_en: 'Bachelor of Arts',
+            degree_name_th: 'ศิลปศาสตรบัณฑิต',
+            degree_short_en: 'B.A.',
+            degree_short_th: 'ศศ.บ.'
           },
            {
             value: false,
             id: 2,
-            name_en: 'Math',
-            name_th: 'คณิตศาสตร์',
+            name_en: 'Bachelor of Arts',
+            name_th: 'ปริญญาศิลปศาสตร์',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาโท',
+            degree_name_en: 'Master of Arts',
+            degree_name_th: 'ศิลปศาสตรมหาบัณฑิต',
+            degree_short_en: 'M.A.',
+            degree_short_th: 'ศศ.ม.'
+            
           },
            {
             value: false,
             id: 3,
-            name_en: 'Science',
-            name_th: 'วิทยาศาสตร์',
+            name_en: 'Bachelor of Arts',
+            name_th: 'ปริญญาศิลปศาสตร์',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาตรี',
+            degree_name_en: 'Doctor of Arts',
+            degree_name_th: 'ศิลปศาสตรดุษฎีบัณฑิต',
+            degree_short_en: 'D.A.',
+            degree_short_th: 'ศศ.ด.'
           },
            {
             value: false,
             id: 4,
-            name_en: 'Computer Science',
-            name_th: 'วิทยาการคอมพิวเตอร์',
+            name_en: 'Bachelor of Science',
+            name_th: 'ปริญญาวิทยาศาสตร',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาตรี',
+            degree_name_en: 'Bachelor of Science',
+            degree_name_th: 'วิทยาศาสตรบัณฑิต',
+            degree_short_en: 'B.S.,B.Sc.',
+            degree_short_th: 'วท.บ.'
           },
            {
             value: false,
             id: 5,
-            name_en: 'Physic I',
-            name_th: 'ฟิสิกส์ 1',
+            name_en: 'Bachelor of Science',
+            name_th: 'ปริญญาวิทยาศาสตร',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาโท',
+            degree_name_en: 'Master of Science ',
+            degree_name_th: 'วิทยาศาสตรมหาบัณฑิต',
+            degree_short_en: 'B.A.',
+            degree_short_th: 'ศศ.บ'
           },
            {
             value: false,
             id: 6,
-            name_en: 'Physic II',
-            name_th: 'ฟิสิกส์ 2',
+            name_en: 'Bachelor of Political Science',
+            name_th: 'ปริญญาตามชื่อศาสตร์',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาตรี',
+            degree_name_en: 'Bachelor of Political Science',
+            degree_name_th: 'รัฐศาสตรบัณฑิต',
+            degree_short_en: 'B.Pol.Sc.',
+            degree_short_th: 'ร.บ.'
           },
            {
             value: false,
             id: 7,
-            name_en: 'Physic III',
-            name_th: 'ฟิสิกส์ 3',
+            name_en: 'Economics',
+            name_th: 'สาขาวิชาเศรษฐศาสตร์ ',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาตรี',
+            degree_name_en: 'Doctor of Economics',
+            degree_name_th: 'เศรษฐศาสตรดุษฎีบัณฑิต',
+            degree_short_en: 'D.Econ.',
+            degree_short_th: 'ศ.ด.'
           },
            {
             value: false,
@@ -230,23 +273,41 @@
             name_en: 'Current Topics in Computer Programming Development',
             name_th: 'หัวข้อปัจจุบันทางด้านการพัฒนาโปรแกรมคอมพิวเตอร์',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาตรี',
+            degree_name_en: 'Bachelor of Arts',
+            degree_name_th: 'ศิลปศาสตรบัณฑิต',
+            degree_short_en: 'B.A.',
+            degree_short_th: 'ศศ.บ'
           },
            {
             value: false,
             id: 9,
-            name_en: 'Music in Thai Society',
-            name_th: 'ดนตรีกับชีวิตในสังคมไทย',
+            name_en: 'Department of Accounting',
+            name_th: 'สาขาวิชาการบัญชี',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาตรี',
+            degree_name_en: 'Bachelor of Accountancy',
+            degree_name_th: 'บัญชีบัณฑิต',
+            degree_short_en: 'B.Acc.',
+            degree_short_th: 'บช.บ.'
           },
            {
             value: false,
             id: 10,
-            name_en: 'Artificial Intelligence',
-            name_th: 'ปัญญาประดิษฐ์',
+            name_en: 'Thai Traditional Medicine',
+            name_th: 'สาขาวิชาการแพทย์แผนไทย',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาเอก',
+            degree_name_en: 'Doctor of Thai Traditional Medicine',
+            degree_name_th: 'การแพทย์แผนไทยดุษฎีบัณฑิต',
+            degree_short_en: 'D.TM.',
+            degree_short_th: 'พท.ด.'
           },
            {
             value: false,
@@ -254,15 +315,27 @@
             name_en: 'Software Verification and Validation',
             name_th: 'การทวนสอบและตรวจสอบซอฟต์แวร์',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาตรี',
+            degree_name_en: 'Bachelor of Arts',
+            degree_name_th: 'ศิลปศาสตรบัณฑิต',
+            degree_short_en: 'B.A.',
+            degree_short_th: 'ศศ.บ'
           },
            {
             value: false,
             id: 12,
-            name_en: 'Ethic and Law for Software Engineering',
-            name_th: 'จริยธรรมและกฎหมายสำหรับวิศวกรรมซอฟต์แวร์',
+            name_en: 'Chinese Medicine',
+            name_th: 'สาขาวิชาการแพทย์แผนจีน',
             major_en: 'Software Engineering',
-            major_th: 'วิศวกรรมซอฟต์แวร์'
+            major_th: 'วิศวกรรมซอฟต์แวร์',
+            faculty: 'คณะวิศวกรรมศาสตร์',
+            degree_lv: 'ปริญญาตรี',
+            degree_name_en: 'Master of Traditional Chinese Medicine',
+            degree_name_th: 'การแพทย์แผนจีนมหาบัณฑิต ',
+            degree_short_en: 'M.CM.',
+            degree_short_th: 'พจ.ม'
           },
         ],
         items: [
