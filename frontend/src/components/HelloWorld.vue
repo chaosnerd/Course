@@ -1,6 +1,36 @@
 <template>
   <v-container>
+      <v-dialog
+        v-model="dialog1"
+        width="500"
+      >
+        
+        <v-card>
+          <v-card-title
+            class="headline grey lighten-2"
+            primary-title
+          >
+            Course info
+          </v-card-title>
 
+          <v-card-text>
+            {{form.name_en}}  
+          </v-card-text>
+
+          <v-divider></v-divider>
+
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn
+              color="primary"
+              flat
+              v-on:click="dialog1 = false"
+            >
+              close
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
     <template>
       <v-carousel>
         <v-carousel-item
@@ -101,6 +131,8 @@
             </v-card-actions>
         </v-card>
         </v-dialog>
+
+        
     </v-layout>
 
       </div>
@@ -132,7 +164,11 @@
         <td class="text-xs-left">{{ props.item.name_th }}</td>
         <td class="text-xs-left">{{ props.item.major_en }}</td>
         <td class="text-xs-left">{{ props.item.major_th }}</td>
-        <td class="text-auto-left"><v-btn color="warning" @click="editItem(props.item)">Edit</v-btn><v-btn color="error" @click="deleteItem(props.item)">Delete</v-btn></td>
+        <td class="text-auto-left">
+          <v-btn color="success" v-on:click="viewItem(props.item)">View</v-btn>
+          <v-btn color="warning" @click="editItem(props.item)">Edit</v-btn>
+          <v-btn color="error" @click="deleteItem(props.item)">Delete</v-btn>
+        </td>
       </template>
 
       <v-alert slot="no-results" :value="true" color="error" icon="warning">
@@ -150,7 +186,12 @@
 <script>
   export default {
     methods: {
+      viewItem (item) {
+        this.form = Object.assign({}, item)
+        this.dialog1 = true
+      },
       editItem (item) {
+        this.editedIndex -1 
         this.editedIndex = this.details.indexOf(item)
         this.form = Object.assign({}, item)
         this.dialog = true
@@ -165,7 +206,6 @@
         } else {
           this.form.id = this.details.length+1
           this.details.push(this.form)
-          this.editedIndex = -1
         }
         this.close()
       }
@@ -174,6 +214,7 @@
       return { 
         editedIndex:-1,
         dialog: false,
+        dialog1: false,
         search: '',  
         pagination: {
           sortBy: 'ID'
