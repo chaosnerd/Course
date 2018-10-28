@@ -4,14 +4,6 @@
       wrap
       style="height: 100%;"
     >
-      <v-container>
-        <v-layout justify-center>
-          <v-content>
-            <HelloWorld/>
-          </v-content>
-        </v-layout>
-      </v-container>
-
       <v-navigation-drawer
         v-model="drawer"
         :mini-variant="mini"
@@ -44,24 +36,31 @@
 
         <v-list class="pt-0" dense>
           <v-divider light></v-divider>
-
-          <v-list-tile
-            v-for="item in items"
-            :key="item.title"
-            @click="mini!=mini"
-          >
-            <v-list-tile-action>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-tile-action>
-
-            <v-list-tile-content>
-              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
+            <router-link  to="/">
+              <v-list-tile>
+                  <v-list-tile-action >
+                      <v-icon>assignment</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title>Home</v-list-tile-title>
+                  </v-list-tile-content>
+              </v-list-tile>
+            </router-link>
+            <router-link  to="/test">
+              <v-list-tile>
+                  <v-list-tile-action >
+                      <v-icon>exit_to_app</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title>Logout</v-list-tile-title>
+                  </v-list-tile-content>
+              </v-list-tile>
+            </router-link>
         </v-list>
       </v-navigation-drawer>
+      <router-view></router-view>
     </v-layout>
-
+    
     
   </v-app>
 </template>
@@ -78,7 +77,7 @@ export default {
     return {
       drawer: true,
       items: [
-        { title: 'Home', icon: 'dashboard' },
+        { title: 'Home', icon: 'dashboard'  },
         { title: 'About', icon: 'question_answer' }
       ],
       mini: true,

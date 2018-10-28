@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container id="test">
     <v-layout
       text-xs-center
       wrap
@@ -12,7 +12,7 @@
           height="200"
         ></v-img>
       </v-flex>
-
+      
       <v-flex mb-4>
         <h1 class="display-2 font-weight-bold mb-3">
           Welcome to Vuetify
@@ -143,5 +143,7 @@
 </script>
 
 <style>
-
+#test{
+    padding-left: 7%;
+}
 </style>
