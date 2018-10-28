@@ -18,7 +18,7 @@
         <v-layout row justify-left>
         <v-dialog v-model="dialog" persistent max-width="800px">
 
-        <v-btn slot="activator" color="success" dark>Create Course</v-btn>
+        <v-btn slot="activator" color="success" dark v-on:click="form=form_clear">Course</v-btn>
 
         <v-card>
             <v-card-title>
@@ -28,17 +28,17 @@
             <v-container grid-list-md>
                 <v-layout wrap>
                     <v-flex xs12 sm6 md6>
-                        <v-text-field label="ชื่อหลักสูตรภาษาไทย*" hint="Course Name TH" persistent-hint required></v-text-field>
+                        <v-text-field label="ชื่อหลักสูตรภาษาไทย*" hint="Course Name TH" persistent-hint required  v-model="form.name_th"></v-text-field>
                     </v-flex>
                     <v-flex xs12 sm6 md6>
-                        <v-text-field label="ชื่อหลักสูตรภาษาอังกฤษ*" hint="Course Name EN" persistent-hint required></v-text-field>
+                        <v-text-field label="ชื่อหลักสูตรภาษาอังกฤษ*" hint="Course Name EN" persistent-hint required v-model="form.name_en"></v-text-field>
                     </v-flex>
 
                     <v-flex xs12 sm6 md6>
-                        <v-text-field label="ชื่อสาขาภาษาไทย*" hint="Major Name TH" persistent-hint required></v-text-field>
+                        <v-text-field label="ชื่อสาขาภาษาไทย*" hint="Major Name TH" persistent-hint required v-model="form.major_th"></v-text-field>
                     </v-flex>
                     <v-flex xs12 sm6 md6>
-                        <v-text-field label="ชื่อสาขาภาษาอังกฤษ*" hint="Major Name EN" persistent-hint required></v-text-field>
+                        <v-text-field label="ชื่อสาขาภาษาอังกฤษ*" hint="Major Name EN" persistent-hint required v-model="form.major_en"></v-text-field>
                     </v-flex>
 
                     <v-flex xs12 sm6>
@@ -63,6 +63,7 @@
                                     'วิทยาลัยการจัดการ']"
                         label="คณะ"
                         hint="Faculty" persistent-hint
+                        v-model="form.faculty"
                         ></v-autocomplete>
                     </v-flex>
 
@@ -71,21 +72,22 @@
                         :items="['ปริญญาตรี', 'ปริญญาโท', 'ปริญญาเอก']"
                         label="ระดับปริญญา"
                         hint="Degree" persistent-hint
+                        v-model="form.degree_lv"
                         ></v-autocomplete>
                     </v-flex>
 
                     <v-flex xs12 sm6 md6>
-                        <v-text-field label="ชื่อปริญญาภาษาไทย*" hint="Degree Name TH" persistent-hint required></v-text-field>
+                        <v-text-field label="ชื่อปริญญาภาษาไทย*" hint="Degree Name TH" persistent-hint required v-model="form.degree_name_th"></v-text-field>
                     </v-flex>
                     <v-flex xs12 sm6 md6>
-                        <v-text-field label="ชื่อปริญญาอังกฤษ*" hint="Degree Name EN" persistent-hint required></v-text-field>
+                        <v-text-field label="ชื่อปริญญาอังกฤษ*" hint="Degree Name EN" persistent-hint required v-model="form.degree_name_en"></v-text-field>
                     </v-flex>
 
                     <v-flex xs12 sm6 md6>
-                        <v-text-field label="ชื่อย่อปริญญาภาษาไทย*" hint="Degree Short Name TH" persistent-hint required></v-text-field>
+                        <v-text-field label="ชื่อย่อปริญญาภาษาไทย*" hint="Degree Short Name TH" persistent-hint required v-model="form.degree_short_th"></v-text-field>
                     </v-flex>
                     <v-flex xs12 sm6 md6>
-                        <v-text-field label="ชื่อย่อปริญญาอังกฤษ*" hint="Degree Short Name EN" persistent-hint required></v-text-field>
+                        <v-text-field label="ชื่อย่อปริญญาอังกฤษ*" hint="Degree Short Name EN" persistent-hint required v-model="form.degree_short_en"></v-text-field>
                     </v-flex>
 
                 </v-layout>
@@ -130,7 +132,7 @@
         <td class="text-xs-left">{{ props.item.name_th }}</td>
         <td class="text-xs-left">{{ props.item.major_en }}</td>
         <td class="text-xs-left">{{ props.item.major_th }}</td>
-        <td class="text-auto-left"><v-btn color="warning">Edit</v-btn><v-btn color="error">Delete</v-btn></td>
+        <td class="text-auto-left"><v-btn color="warning"  v-on:click ="form= props.item,dialog=true">Edit</v-btn><v-btn color="error">Delete</v-btn></td>
       </template>
 
       <v-alert slot="no-results" :value="true" color="error" icon="warning">
@@ -153,7 +155,33 @@
         search: '',  
         pagination: {
           sortBy: 'ID'
-        },     
+        },
+        form:{
+            id: 0,
+            name_en: '',
+            name_th: '',
+            major_en: '',
+            major_th: '',
+            faculty: '',
+            degree_lv: '',
+            degree_name_en: '',
+            degree_name_th: '',
+            degree_short_en: '',
+            degree_short_th: ''
+        },
+        form_clear:{
+            id: 0,
+            name_en: '',
+            name_th: '',
+            major_en: '',
+            major_th: '',
+            faculty: '',
+            degree_lv: '',
+            degree_name_en: '',
+            degree_name_th: '',
+            degree_short_en: '',
+            degree_short_th: ''
+        },
         headers: [
           {
             text: 'ID',
