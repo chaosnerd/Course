@@ -14,7 +14,38 @@
           </v-card-title>
 
           <v-card-text>
-            {{form.name_en}}  
+            <v-flex xs12 sm6 md12>
+                       ชื่อหลักสูตรภาษาอังกฤษ : {{form.name_en}}
+            </v-flex>
+            <v-flex xs12 sm6 md12>
+                       ชื่อหลักสูตรภาษาไทย : {{form.name_th}}
+            </v-flex>
+            <v-flex xs12 sm6 md12>
+                       ชื่อสาขาภาษาอังกฤษ : {{form.major_en}}
+            </v-flex>
+            <v-flex xs12 sm6 md12>
+                       ชื่อสาขาภาษาไทย : {{form.major_th}}
+            </v-flex>
+            <v-flex xs12 sm6 md12>
+                       คณะ : {{form.faculty}}
+            </v-flex>
+            <v-flex xs12 sm6 md12>
+                       ระดับปริญญา : {{form.degree_lv}}
+            </v-flex>
+            <v-flex xs12 sm6 md12>
+                       ชื่อปริญญาอังกฤษ : {{form.degree_name_en}}
+            </v-flex>
+            <v-flex xs12 sm6 md12>
+                       ชื่อปริญญาภาษาไทย : {{form.degree_name_th}}
+            </v-flex>
+            <v-flex xs12 sm6 md12>
+                       ชื่อย่อปริญญาภาษาอังกฤษ : {{form.degree_short_en}}
+            </v-flex>
+            <v-flex xs12 sm6 md12>
+                       ชื่อย่อปริญญาภาษาไทย : {{form.degree_short_th}}
+            </v-flex>
+            
+              
           </v-card-text>
 
           <v-divider></v-divider>
