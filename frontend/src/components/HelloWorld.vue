@@ -97,7 +97,7 @@
                 <v-card-actions>
                 <v-spacer></v-spacer>
                 <v-btn color="blue darken-1" flat @click.native="dialog = false">Close</v-btn>
-                <v-btn color="blue darken-1" flat @click.native="dialog = false">Save</v-btn>
+                <v-btn color="blue darken-1" flat @click.native="dialog = false" v-on:click="save">Save</v-btn>
             </v-card-actions>
         </v-card>
         </v-dialog>
@@ -132,7 +132,7 @@
         <td class="text-xs-left">{{ props.item.name_th }}</td>
         <td class="text-xs-left">{{ props.item.major_en }}</td>
         <td class="text-xs-left">{{ props.item.major_th }}</td>
-        <td class="text-auto-left"><v-btn color="warning"  v-on:click ="form= props.item,dialog=true">Edit</v-btn><v-btn color="error">Delete</v-btn></td>
+        <td class="text-auto-left"><v-btn color="warning" @click="editItem(props.item)">Edit</v-btn><v-btn color="error" @click="deleteItem(props.item)">Delete</v-btn></td>
       </template>
 
       <v-alert slot="no-results" :value="true" color="error" icon="warning">
@@ -149,8 +149,30 @@
 
 <script>
   export default {
+    methods: {
+      editItem (item) {
+        this.editedIndex = this.details.indexOf(item)
+        this.form = Object.assign({}, item)
+        this.dialog = true
+      },
+      deleteItem (item) {
+        const index = this.details.indexOf(item)
+        confirm('Are you sure you want to delete this Course?') && this.details.splice(index, 1)
+      },
+      save () {
+        if (this.editedIndex > -1) {
+          Object.assign(this.details[this.editedIndex], this.form)
+        } else {
+          this.form.id = this.details.length+1
+          this.details.push(this.form)
+          this.editedIndex = -1
+        }
+        this.close()
+      }
+    },
     data () {
       return { 
+        editedIndex:-1,
         dialog: false,
         search: '',  
         pagination: {
