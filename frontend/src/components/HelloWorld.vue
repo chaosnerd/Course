@@ -5,6 +5,7 @@
       :items="details"
       class="elevation-1"
       id="table"
+      :rows-per-page-items='[ 10, 25, { "text": "$vuetify.dataIterator.rowsPerPageAll", "value": -1 } ]'
     >
       <template slot="items" slot-scope="props">
         <td>{{ props.item.id }}</td>
@@ -18,7 +19,10 @@
       </template>
     </v-data-table>
   </v-container>
+
 </template>
+
+
 
 <script>
   export default {
