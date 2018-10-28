@@ -44,7 +44,7 @@
                     <v-flex xs12 sm6>
                         <v-autocomplete
                         :items="['คณะเกษตรศาสตร์และทรัพยากรธรรมชาติ',
-                                    'คณะเทคโนโลยีสารสนเทศและการสื่อสาร',
+                                    'คณะวิศวกรรมซอฟต์แวร์และการสื่อสาร',
                                     'คณะพยาบาลศาสตร์',
                                     'คณะเภสัชศาสตร์',
                                     'คณะวิทยาศาสตร์',
@@ -158,8 +158,8 @@
           {
             text: 'ID',
             align: 'left',
-            sortable: false ,
-            value: 'name'
+            sortable: true ,
+            // value: 'name'
           },
           { text: 'Course Name', value: 'name_en' },
           { text: 'ชื่อหลักสูตร', value: 'name_th' },
@@ -173,96 +173,96 @@
             id: 1,
             name_en: 'Computer',
             name_th: 'คอมพิวเตอร์',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
            {
             value: false,
             id: 2,
             name_en: 'Math',
             name_th: 'คณิตศาสตร์',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
            {
             value: false,
             id: 3,
             name_en: 'Science',
             name_th: 'วิทยาศาสตร์',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
            {
             value: false,
             id: 4,
             name_en: 'Computer Science',
             name_th: 'วิทยาการคอมพิวเตอร์',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
            {
             value: false,
             id: 5,
             name_en: 'Physic I',
             name_th: 'ฟิสิกส์ 1',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
            {
             value: false,
             id: 6,
             name_en: 'Physic II',
             name_th: 'ฟิสิกส์ 2',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
            {
             value: false,
             id: 7,
             name_en: 'Physic III',
             name_th: 'ฟิสิกส์ 3',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
            {
             value: false,
             id: 8,
             name_en: 'Current Topics in Computer Programming Development',
             name_th: 'หัวข้อปัจจุบันทางด้านการพัฒนาโปรแกรมคอมพิวเตอร์',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
            {
             value: false,
             id: 9,
             name_en: 'Music in Thai Society',
             name_th: 'ดนตรีกับชีวิตในสังคมไทย',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
            {
             value: false,
             id: 10,
             name_en: 'Artificial Intelligence',
             name_th: 'ปัญญาประดิษฐ์',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
            {
             value: false,
             id: 11,
             name_en: 'Software Verification and Validation',
             name_th: 'การทวนสอบและตรวจสอบซอฟต์แวร์',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
            {
             value: false,
             id: 12,
             name_en: 'Ethic and Law for Software Engineering',
             name_th: 'จริยธรรมและกฎหมายสำหรับวิศวกรรมซอฟต์แวร์',
-            major_en: 'ICT',
-            major_th: 'เทคโนโลยีสารสนเทศ'
+            major_en: 'Software Engineering',
+            major_th: 'วิศวกรรมซอฟต์แวร์'
           },
         ],
         items: [
