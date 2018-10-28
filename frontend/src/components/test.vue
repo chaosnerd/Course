@@ -1,6 +1,6 @@
 <template>
     <div id="test">
-        <h1>tasdajshdkjashdkajhskdahsdkjashdk</h1>  
+        <h1>Logout</h1>  
     </div>
 </template>
 

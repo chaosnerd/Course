@@ -19,11 +19,11 @@
 
           <v-list-tile avatar tag="div">
             <v-list-tile-avatar>
-              <img src="https://randomuser.me/api/portraits/men/85.jpg">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYp1893e9HwCm_oPAKRUrQJ2SaVIyVZxaa_k4ViK89hkNxWlsVw">
             </v-list-tile-avatar>
 
             <v-list-tile-content>
-              <v-list-tile-title>John Leider</v-list-tile-title>
+              <v-list-tile-title>อ.แจว มาแจวจ้ําจึก</v-list-tile-title>
             </v-list-tile-content>
 
             <v-list-tile-action>
@@ -37,7 +37,7 @@
         <v-list class="pt-0" dense>
           <v-divider light></v-divider>
             <router-link  to="/">
-              <v-list-tile>
+              <v-list-tile @click.stop="mini = !mini">
                   <v-list-tile-action >
                       <v-icon>assignment</v-icon>
                   </v-list-tile-action>
@@ -47,7 +47,7 @@
               </v-list-tile>
             </router-link>
             <router-link  to="/test">
-              <v-list-tile>
+              <v-list-tile @click.stop="mini = !mini">
                   <v-list-tile-action >
                       <v-icon>exit_to_app</v-icon>
                   </v-list-tile-action>

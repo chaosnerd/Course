@@ -12,7 +12,7 @@
         <td class="text-xs-left">{{ props.item.name_th }}</td>
         <td class="text-xs-left">{{ props.item.major_en }}</td>
         <td class="text-xs-left">{{ props.item.major_th }}</td>
-        <td class="text-xs-left"><v-btn color="error">Error</v-btn></td>
+        <td class="text-xs-left"><v-btn color="warning">Edit</v-btn><v-btn color="error">Delete</v-btn></td>
 
         
       </template>
@@ -31,10 +31,11 @@
             sortable: false ,
             value: 'name'
           },
-          { text: 'Course Name(EN) ชื่อหลักสูตรภาษาอังกฤษ', value: 'name_en' },
-          { text: 'Course Name(TH) ชื่อหลักสูตรภาษาไทย', value: 'name_th' },
-          { text: 'Major(EN) คณะภาษาอังกฤษ', value: 'major_en' },
-          { text: 'Major(TH) คณะภาษาไทย', value: 'major_th' },
+          { text: 'Course Name', value: 'name_en' },
+          { text: 'ชื่อหลักสูตร', value: 'name_th' },
+          { text: 'Major', value: 'major_en' },
+          { text: 'สาขา', value: 'major_th' },
+          { text: 'Action', value: '' },
         ],
         details: [
           {
