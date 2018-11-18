@@ -9,7 +9,7 @@ Vue.config.productionTip = false
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 import router from './router'
-
+Vue.prototype.$url = 'http://127.0.0.1:3333/api'
 new Vue({
   router,
   render : h => h(App),

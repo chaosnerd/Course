@@ -66,12 +66,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Course from './components/Course'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Course
   },
    data () {
     return {
