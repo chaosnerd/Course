@@ -75,12 +75,16 @@
     <br><br>
 
     <template>
-      <div>
+      
+  </template>
+      <v-card>
+        <v-card-title>
+          <div>
         <v-layout row justify-left>
         <v-dialog v-model="dialog" persistent max-width="800px">
 
         <v-btn slot="activator" color="success" dark v-on:click="form=form_clear">Course</v-btn>
-
+        
         <v-card>
             <v-card-title>
             <span class="headline">Create</span>
@@ -149,9 +153,6 @@
     </v-layout>
 
       </div>
-  </template>
-      <v-card>
-        <v-card-title>
           <v-spacer></v-spacer>
           <v-text-field
             v-model="search"
